@@ -1,0 +1,120 @@
+---
+const bebidas = [
+  {
+    nombre: "Coca Cola 350ml",
+    precio: "$5.000",
+  },
+  {
+    nombre: "Coca Cola Zero 350ml",
+    precio: "$5.000",
+  },
+  {
+    nombre: "Sprite 350ml",
+    precio: "$5.000",
+  },
+  {
+    nombre: "Quatro 350ml",
+    precio: "$5.000",
+  },
+  {
+    nombre: "Agua Cristal",
+    precio: "$3.000",
+  },
+  {
+    nombre: "Pepsi 350ml",
+    precio: "$5.000",
+  },
+  {
+    nombre: "Manzana 350ml",
+    precio: "$5.000",
+  },
+];
+---
+
+<section id="bebidas" class="bg-[#161616] pt-12 pb-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Título -->
+    <div class="text-center mb-10">
+      <span
+        class="text-orange-500
+          uppercase
+          tracking-[0.3em]
+          font-semibold
+          text-sm"
+      >
+        Complementos
+      </span>
+
+      <h2
+        class="mt-4
+          text-4xl
+          md:text-6xl
+          font-black
+          text-white
+          uppercase"
+      >
+        🥤 Bebidas
+      </h2>
+
+      <div
+        class="w-24
+          h-1
+          bg-orange-500
+          mx-auto
+          mt-6
+          rounded-full"
+      >
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div
+      class="grid
+        grid-cols-1
+        md:grid-cols-2
+        lg:grid-cols-3
+        gap-6"
+    >
+      {
+        bebidas.map((bebida) => (
+          <div
+            class="
+              bg-[#161616]
+              border
+              border-white/10
+              rounded-2xl
+              p-6
+              hover:border-orange-500/50
+              transition-all
+              duration-300
+            "
+          >
+            <div class="flex justify-between items-center">
+              <div>
+                <p
+                  class="
+                    text-white
+                    font-semibold
+                    text-lg
+                  "
+                >
+                  {bebida.nombre}
+                </p>
+              </div>
+
+              <span
+                class="
+                  text-orange-500
+                  font-black
+                  text-xl
+                "
+              >
+                {bebida.precio}
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

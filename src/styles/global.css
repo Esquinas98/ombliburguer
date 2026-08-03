@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+@media (max-width: 640px) {
+  html { scroll-padding-top: 5.5rem; }
+}
