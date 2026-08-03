@@ -1,35 +1,332 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OmliburGuer - Menú de Hamburguesas</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <h1>🍔 OmliburGuer</h1>
-                <p>Tu local de hamburguesas favorito</p>
-            </div>
-        </header>
-
-        <nav class="menu-tabs">
-            <button class="tab-btn active" data-tab="hamburguesas">🍔 Hamburguesas</button>
-        </nav>
-
-        <!-- Sección de Hamburguesas -->
-        <section id="hamburguesas" class="menu-section active">
-            <h2>Nuestras Hamburguesas</h2>
-            <div class="menu-grid" id="hamburguesas-grid">
-                <!-- Se genera dinámicamente -->
-            </div>
-        </section>
-
-
-    </div>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="icons/icon.ico"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v7.1.6"><title>Ombliburger</title><link rel="stylesheet" href="/ombliburguer/_astro/index.tGaW3_Mr.css"></head><body><nav class="fixed top-0 left-0 w-full z-30 bg-[#0f0f0f]/95 backdrop-blur-sm border-b border-white/10 shadow-lg shadow-black/10"><div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex gap-4 md:gap-8 text-white uppercase font-semibold tracking-wider text-xs md:text-sm"><a href="#" class="hover:text-orange-500 transition">Inicio</a><a href="#hamburguesas" class="hover:text-orange-500 transition">Hamburguesas</a></div><a href="./" class="flex justify-center"><img src="images/logo.webp" alt="Omliburger" class="w-32 md:w-48"></a><div class="flex gap-4 md:gap-8 text-white uppercase font-semibold tracking-wider text-xs md:text-sm"><a href="#bebidas" class="hover:text-orange-500 transition">Bebidas</a><a href="#contacto" class="hover:text-orange-500 transition">Contacto</a></div></div></nav><!-- Navbar scroll handler removed temporarily to prevent runtime errors.
+     If you want it restored, I can reimplement a simpler, safer version.
+--><section class="relative min-h-screen bg-[#0f0f0f] overflow-hidden"><div class="absolute inset-0 opacity-10" style="
+      background-image:
+      radial-gradient(circle at center, white 1px, transparent 1px);
+      background-size: 20px 20px;
+    "></div><div class="relative z-10 min-h-screen flex items-center justify-center px-6 pt-28 md:pt-32"><div class="max-w-7xl mx-auto w-full"><div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]"><div class="relative flex justify-center items-end md:items-center"><h2 class="absolute
+              text-[10rem]
+              font-black
+              text-white/10
+              uppercase
+              top-1/2
+              left-1/2
+              -translate-x-1/2
+              -translate-y-1/2
+              hidden lg:block
+              whitespace-nowrap"></h2><img src="images/ombliburger.webp" alt="Omliburger" class="relative
+              z-10
+              w-full
+              max-w-[350px]
+              md:max-w-[500px]
+              lg:max-w-[800px]
+              object-contain"></div><div class="mt-10
+            text-center
+            max-w-2xl
+            mx-auto"><div class="relative z-10 text-center"><span class="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold uppercase">Hamburguesa Insignia</span><h1 class="mt-6
+                text-4xl
+                md:text-6xl
+                lg:text-8xl
+                font-black
+                text-white
+                uppercase
+                leading-none">OMLIBURGER</h1><p class="mt-6 text-xl text-gray-300 max-w-xl mx-auto leading-relaxed">Pan brioche, 180g de carne Angus, doble queso cheddar, doble tocineta, doble pepinillo y salsa especial de la casa.</p></div><div class="mt-8
+    flex
+    justify-center
+    gap-6
+    flex-wrap"><span class="text-orange-400">🥩 Angus</span><span class="text-orange-400">🧀 Doble Cheddar</span><span class="text-orange-400">🥓 Doble Tocineta</span></div><div class="mt-8 text-5xl font-black text-orange-500">$32.000</div><div class="mt-10
+    flex
+    justify-center
+    gap-4"><a href="#hamburguesas" class="px-8 py-4 bg-orange-500 text-white rounded-full font-bold">Ver Menú</a><a href="#bebidas" class="px-8 py-4 border-2 border-white text-white rounded-full font-bold">Bebidas</a></div></div></div></div></div></section><section id="hamburguesas" class="bg-[#111111] py-16 scroll-mt-56 md:scroll-mt-40"><div class="max-w-7xl mx-auto px-6"><div class="text-center mb-10"><span class="text-orange-500 uppercase tracking-[0.3em] font-semibold text-sm">Menú</span><h2 class="mt-4 text-4xl md:text-6xl font-black text-white uppercase">Nuestras Hamburguesas</h2><div class="w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full"></div></div><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"><article class="
+              bg-[#161616]
+              rounded-3xl
+              overflow-hidden
+              border
+              border-orange-500/20
+              hover:border-orange-500
+              transition-all
+              duration-300
+              flex
+              flex-col
+            "><div class="overflow-hidden"><img src="images/FX.webp" alt="FX" loading="lazy" decoding="async" class="
+      w-full
+      h-auto
+      object-contain
+    "></div><div class="p-6 flex flex-col flex-1"><h3 class="
+                  text-2xl
+                  font-black
+                  uppercase
+                  text-orange-500
+                ">FX</h3><p class="
+                  mt-3
+                  text-gray-300
+                  text-sm
+                  leading-relaxed
+                ">Pan pretzel, 180g de carne de cerdo, doble queso mozzarella, cebolla caramelizada en frutos rojos, doble tocineta y mayonesa.</p><div class="
+                  mt-6
+                  flex
+                  justify-start
+                  items-center
+                "><span class="
+                    text-3xl
+                    font-black
+                    text-white
+                  ">$32.000</span></div></div></article><article class="
+              bg-[#161616]
+              rounded-3xl
+              overflow-hidden
+              border
+              border-orange-500/20
+              hover:border-orange-500
+              transition-all
+              duration-300
+              flex
+              flex-col
+            "><div class="overflow-hidden"><img src="images/CARAMELO.webp" alt="Caramelo" loading="lazy" decoding="async" class="
+      w-full
+      h-auto
+      object-contain
+    "></div><div class="p-6 flex flex-col flex-1"><h3 class="
+                  text-2xl
+                  font-black
+                  uppercase
+                  text-orange-500
+                ">Caramelo</h3><p class="
+                  mt-3
+                  text-gray-300
+                  text-sm
+                  leading-relaxed
+                ">Pan pretzel, 180g de carne de cerdo, queso philadelphia, trozos de patacón salado, doble tocineta y salsa de caramelo picante.</p><div class="
+                  mt-6
+                  flex
+                  justify-start
+                  items-center
+                "><span class="
+                    text-3xl
+                    font-black
+                    text-white
+                  ">$32.000</span></div></div></article><article class="
+              bg-[#161616]
+              rounded-3xl
+              overflow-hidden
+              border
+              border-orange-500/20
+              hover:border-orange-500
+              transition-all
+              duration-300
+              flex
+              flex-col
+            "><div class="overflow-hidden"><img src="images/smash-oklahoma.webp" alt="Smash Oklahoma" loading="lazy" decoding="async" class="
+      w-full
+      h-auto
+      object-contain
+    "></div><div class="p-6 flex flex-col flex-1"><h3 class="
+                  text-2xl
+                  font-black
+                  uppercase
+                  text-orange-500
+                ">Smash Oklahoma</h3><p class="
+                  mt-3
+                  text-gray-300
+                  text-sm
+                  leading-relaxed
+                ">Pan brioche, dos carnes angus tipo smash de 100g cada una, salsa smash, cebolla, queso cheddar, tocineta y pepinillos.</p><div class="
+                  mt-6
+                  flex
+                  justify-start
+                  items-center
+                "><span class="
+                    text-3xl
+                    font-black
+                    text-white
+                  ">$32.000</span></div></div></article><article class="
+              bg-[#161616]
+              rounded-3xl
+              overflow-hidden
+              border
+              border-orange-500/20
+              hover:border-orange-500
+              transition-all
+              duration-300
+              flex
+              flex-col
+            "><div class="overflow-hidden"><img src="images/370.webp" alt="370" loading="lazy" decoding="async" class="
+      w-full
+      h-auto
+      object-contain
+    "></div><div class="p-6 flex flex-col flex-1"><h3 class="
+                  text-2xl
+                  font-black
+                  uppercase
+                  text-orange-500
+                ">370</h3><p class="
+                  mt-3
+                  text-gray-300
+                  text-sm
+                  leading-relaxed
+                ">Pan pretzel, 180g de carne, queso philadelphia, tocineta caramelizada y aros de cebolla.</p><div class="
+                  mt-6
+                  flex
+                  justify-start
+                  items-center
+                "><span class="
+                    text-3xl
+                    font-black
+                    text-white
+                  ">$32.000</span></div></div></article></div></div></section><section id="bebidas" class="bg-[#161616] pt-12 pb-16"><div class="max-w-6xl mx-auto px-6"><!-- Título --><div class="text-center mb-10"><span class="text-orange-500
+          uppercase
+          tracking-[0.3em]
+          font-semibold
+          text-sm">Complementos</span><h2 class="mt-4
+          text-4xl
+          md:text-6xl
+          font-black
+          text-white
+          uppercase">🥤 Bebidas</h2><div class="w-24
+          h-1
+          bg-orange-500
+          mx-auto
+          mt-6
+          rounded-full"></div></div><!-- Grid --><div class="grid
+        grid-cols-1
+        md:grid-cols-2
+        lg:grid-cols-3
+        gap-6"><div class="
+              bg-[#161616]
+              border
+              border-white/10
+              rounded-2xl
+              p-6
+              hover:border-orange-500/50
+              transition-all
+              duration-300
+            "><div class="flex justify-between items-center"><div><p class="
+                    text-white
+                    font-semibold
+                    text-lg
+                  ">Coca Cola 350ml</p></div><span class="
+                  text-orange-500
+                  font-black
+                  text-xl
+                ">$5.000</span></div></div><div class="
+              bg-[#161616]
+              border
+              border-white/10
+              rounded-2xl
+              p-6
+              hover:border-orange-500/50
+              transition-all
+              duration-300
+            "><div class="flex justify-between items-center"><div><p class="
+                    text-white
+                    font-semibold
+                    text-lg
+                  ">Coca Cola Zero 350ml</p></div><span class="
+                  text-orange-500
+                  font-black
+                  text-xl
+                ">$5.000</span></div></div><div class="
+              bg-[#161616]
+              border
+              border-white/10
+              rounded-2xl
+              p-6
+              hover:border-orange-500/50
+              transition-all
+              duration-300
+            "><div class="flex justify-between items-center"><div><p class="
+                    text-white
+                    font-semibold
+                    text-lg
+                  ">Sprite 350ml</p></div><span class="
+                  text-orange-500
+                  font-black
+                  text-xl
+                ">$5.000</span></div></div><div class="
+              bg-[#161616]
+              border
+              border-white/10
+              rounded-2xl
+              p-6
+              hover:border-orange-500/50
+              transition-all
+              duration-300
+            "><div class="flex justify-between items-center"><div><p class="
+                    text-white
+                    font-semibold
+                    text-lg
+                  ">Quatro 350ml</p></div><span class="
+                  text-orange-500
+                  font-black
+                  text-xl
+                ">$5.000</span></div></div><div class="
+              bg-[#161616]
+              border
+              border-white/10
+              rounded-2xl
+              p-6
+              hover:border-orange-500/50
+              transition-all
+              duration-300
+            "><div class="flex justify-between items-center"><div><p class="
+                    text-white
+                    font-semibold
+                    text-lg
+                  ">Agua Cristal</p></div><span class="
+                  text-orange-500
+                  font-black
+                  text-xl
+                ">$3.000</span></div></div><div class="
+              bg-[#161616]
+              border
+              border-white/10
+              rounded-2xl
+              p-6
+              hover:border-orange-500/50
+              transition-all
+              duration-300
+            "><div class="flex justify-between items-center"><div><p class="
+                    text-white
+                    font-semibold
+                    text-lg
+                  ">Pepsi 350ml</p></div><span class="
+                  text-orange-500
+                  font-black
+                  text-xl
+                ">$5.000</span></div></div><div class="
+              bg-[#161616]
+              border
+              border-white/10
+              rounded-2xl
+              p-6
+              hover:border-orange-500/50
+              transition-all
+              duration-300
+            "><div class="flex justify-between items-center"><div><p class="
+                    text-white
+                    font-semibold
+                    text-lg
+                  ">Manzana 350ml</p></div><span class="
+                  text-orange-500
+                  font-black
+                  text-xl
+                ">$5.000</span></div></div></div></div></section><div class="max-w-7xl mx-auto px-6"><div class="h-px bg-white/10"></div></div><footer id="contacto" class="bg-black border-t border-white/10 py-12"><div class="max-w-7xl mx-auto px-6"><div class="flex
+        flex-col
+        md:flex-row
+        justify-between
+        items-center
+        gap-8"><div class="text-center md:text-left"><img src="images/logo.webp" alt="Omliburger" class="w-40 mx-auto md:mx-0"><p class="mt-3 text-gray-400 text-sm max-w-md mx-auto md:mx-0">En Ombliburguer llevamos la hamburguesa a otro nivel. Combinamos ingredientes frescos, carnes jugosas y recetas únicas.</p></div><div class="text-center"><h3 class="text-white
+            font-bold
+            uppercase
+            tracking-wider
+            mb-3">Contacto</h3><p class="text-gray-400">📍 Cali, Colombia</p><p class="text-gray-400">📞 +57 324 488 1879</p></div><div class="text-center"><h3 class="text-white
+            font-bold
+            uppercase
+            tracking-wider
+            mb-3">Síguenos</h3><div class="flex gap-6 justify-center"><a href="https://www.instagram.com/ombliburger" target="_blank" class="text-orange-500 hover:text-orange-400 transition">Instagram</a><a href="https://www.facebook.com/share/1NqkKvssJm/" target="_blank" class="text-orange-500 hover:text-orange-400 transition">Facebook</a><a href="https://www.tiktok.com/@ombliburger" target="_blank" class="text-orange-500 hover:text-orange-400 transition">TikTok</a></div></div></div><div class="mt-10
+        pt-6
+        border-t
+        border-white/10
+        text-center
+        text-gray-500
+        text-sm">© 2026 Omliburger. Todos los derechos reservados. Desarrollado por TwoBytes.</div></div></footer></body></html>
